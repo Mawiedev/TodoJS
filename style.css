@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(120deg, #36d1dc, #5b86e5);
+  color: white;
+  font-family: "Nunito", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+}
+
+header,
+form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+form button {
+  color: #5b86e5;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  background: #5b86e5;
+  color: white;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  transition: all 1s ease;
+  overflow-wrap: anywhere;
+}
+
+.todo-list {
+  min-width: 30vw;
+  list-style: none;
+  max-width: 50vw;
+}
+
+.div-text-todo {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  justify-content: center;
+}
+
+.div-button {
+  display: flex;
+  flex-direction: column;
+  background-color: #5b86e5;
+  justify-content: center;
+}
+
+.edit-btn,
+.del-btn {
+  border: none;
+  background: #5b86e5;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.edit-btn:hover {
+  background-color: rgb(73, 160, 73);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.del-btn:hover {
+  background-color: rgb(218, 74, 74);
+  transition: all 0.3s ease;
+  color: white;
+}
+
+.fa-check,
+.fa-trash {
+  pointer-events: none;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
